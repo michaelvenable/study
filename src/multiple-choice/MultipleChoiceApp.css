@@ -1,0 +1,7 @@
+.multiple-choice-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}

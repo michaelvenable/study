@@ -1,0 +1,57 @@
+.flashcard {
+  height: 100%;
+
+  background-color: #f0efeb;
+  border: 4px solid #003049;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  margin: 5px;
+
+  cursor: pointer;
+  user-select: none;
+
+  overflow: hidden;
+  overflow-x: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flashcard img {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 30px;
+  max-height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.flashcard p {
+  color: #003049;
+  font-family: Quicksand;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 18vw;
+  line-height: 0;
+}
+
+@media (min-width: 1000px) {
+  .flashcard {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-height: 800px) {
+  .flashcard {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

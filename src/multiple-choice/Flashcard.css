@@ -1,0 +1,85 @@
+.multiple-choice-flashcard {
+  height: 100%;
+
+  background-color: #f0efeb;
+  border: 4px solid #003049;
+  border-radius: 10px;
+  transition: border 2s, box-shadow 2s;
+
+  box-sizing: border-box;
+
+  margin: 5px;
+  padding: 5px;
+
+  user-select: none;
+
+  overflow: hidden;
+  overflow-x: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.multiple-choice-flashcard .question {
+  color: #003049;
+  font-family: Quicksand;
+  font-size: calc(32px + .5vw);
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.multiple-choice-flashcard .choices {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.multiple-choice-flashcard .choices button {
+  color: #003049;
+  font-family: Quicksand;
+  font-size: calc(24px + .5vw);
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 30px;
+  padding: 14px 60px;
+  border-radius: 8px;
+}
+
+.multiple-choice-flashcard.wrong {
+  animation-duration: 0.25s;
+  animation-name: wiggle;
+  animation-timing-function: ease-in;
+}
+
+@media (min-width: 1000px) {
+  .multiple-choice-flashcard {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-height: 800px) {
+  .multiple-choice-flashcard {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes wiggle {
+   0% { transform: translateX(-10px); }
+   10% { transform: translateX(10px); }
+   20% { transform: translate(-10px); }
+   30% { transform: translate(10px); }
+   40% { transform: translate(-10px); }
+   50% { transform: translate(10px); }
+   60% { transform: translate(-10px); }
+   70% { transform: translate(10px); }
+   80% { transform: translate(-10px); }
+   90% { transform: translate(10px); }
+   100% { transform: translate(0); }
+}

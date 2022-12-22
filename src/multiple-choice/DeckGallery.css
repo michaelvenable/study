@@ -1,0 +1,58 @@
+.deck-gallery {
+  display: flex;
+  flex-direction: row;
+
+  /* "safe" centering is not yet supported in most browsers. Use auto margins instead (below). */
+  /* justify-content: safe center; */
+
+  height: 120px;
+  min-height: 120px;
+
+  column-gap: 20px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.deck-gallery-item:first-child {
+  margin-left: auto;
+}
+
+.deck-gallery-item:last-child {
+  margin-right: auto;
+}
+
+.deck-gallery-item input[type="checkbox"] {
+  display: none;
+}
+
+.deck-gallery-item label {
+  height: 75px;
+  width: 150px;
+  display: block;
+
+  background-color: #f0efeb;
+  border: 1px solid #003049;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  padding: 0 4px;
+  font-size: 16px;
+  text-align: center;
+  color: #003049;
+  overflow: hidden;
+  overflow-x: hidden;
+  font-family: Quicksand;
+  font-weight: bold;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: background-color 0.25s, color 0.25s, margin-top 0.25s;
+}
+
+.deck-gallery-item input[type="checkbox"]:checked ~ label {
+  margin-top: 20px;
+  background-color: #669bbc;
+  color: #f0efeb;
+}

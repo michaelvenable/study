@@ -1,0 +1,52 @@
+.answers {
+  overflow-y: auto;
+}
+
+.answers h1 {
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+
+.answers .buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.answers .answer {
+  position: relative;
+}
+
+.answers .answer input {
+  padding: 10px 0;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid black;
+  width: 60px;
+  margin: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  flex: 1 0 calc(20% - 10px);
+}
+
+.answers .answer-right {
+  color: green;
+}
+
+.answers .answer-right:after {
+  content: "\2714";
+  position: absolute;
+  top: calc(50% - 42px);
+  left: calc(50% - 20px);
+  font-size: 58px;
+  color: green;
+}
+
+.answers .answer-wrong:after {
+  content: "\274c";
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  font-size: 28px;
+}

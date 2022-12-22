@@ -1,0 +1,85 @@
+.rekenrek-app {
+  height: 100vh;
+  width: 100%;
+
+  background-color: #faf3dd;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .rekenrek-app {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "items"
+      "answers";
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content 1fr;
+    column-gap: 50px;
+  }
+}
+
+@media (min-width: 700px) {
+  .rekenrek-app {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "items answers";
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: min-content 1fr;
+    column-gap: 25px;
+  }
+
+  .items {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rekenrek-app {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "items answers";
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: min-content 1fr;
+    column-gap: 25px;
+  }
+
+  .items {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .rekenrek-app {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "items answers";
+    grid-template-columns: 1fr 600px;
+    grid-template-rows: min-content 1fr;
+    column-gap: 25px;
+  }
+
+  .items {
+    margin-top: 60px;
+  }
+}
+
+.title {
+  grid-area: title;
+}
+
+.items {
+  grid-area: items;
+}
+
+.options {
+  grid-area: options;
+}
+
+.answers {
+  grid-area: answers;
+}

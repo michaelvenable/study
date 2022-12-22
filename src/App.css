@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Quicksand;
+  src: url('./Quicksand-VariableFont_wght.ttf');
+  font-weight: 1 999;
+  font-stretch: 0% 100%;
+  font-optical-sizing: 0 100;
+}
+
+* {
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #faf3dd;
+}

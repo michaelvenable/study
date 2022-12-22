@@ -1,0 +1,97 @@
+.rekenrek .row {
+  position: relative;
+  margin: 20px 10px;
+  white-space: nowrap;
+  height: 30px;
+}
+
+.rekenrek .string {
+  display: block;
+  border-top: 1px solid #a5a6a8;
+  border-bottom: 3px solid #e1e3e0;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 8px;
+}
+
+.rekenrek .bead {
+  display: inline-block;
+  border-width: 3px;
+  border-style: solid;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0 5px;
+  position: relative;
+}
+
+.rekenrek .bead:nth-child(1),
+.rekenrek .bead:nth-child(2),
+.rekenrek .bead:nth-child(3),
+.rekenrek .bead:nth-child(4),
+.rekenrek .bead:nth-child(5) {
+  background-color: red;
+  border-color: darkred;
+}
+
+.rekenrek .bead:nth-child(6),
+.rekenrek .bead:nth-child(7),
+.rekenrek .bead:nth-child(8),
+.rekenrek .bead:nth-child(9),
+.rekenrek .bead:nth-child(10) {
+  background-color: white;
+  border-color: #a5a6a8;
+}
+
+@media (min-width: 400px) {
+  .rekenrek .string {
+    border-top: 1px solid #a5a6a8;
+    border-bottom: 3px solid #e1e3e0;
+    top: 10px;
+  }
+
+  .rekenrek .bead {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    border-width: 3px;
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 800px) {
+  .rekenrek .string {
+    border-top: 1px solid #a5a6a8;
+    border-bottom: 4px solid #e1e3e0;
+    top: 14px;
+  }
+
+  .rekenrek .bead {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border-width: 5px;
+    margin: 0 6px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rekenrek .row {
+    margin: 28px 10px;
+  }
+
+  .rekenrek .string {
+    border-top: 1px solid #a5a6a8;
+    border-bottom: 4px solid #e1e3e0;
+    top: 16px;
+  }
+
+  .rekenrek .bead {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    border-width: 5px;
+    margin: 0 10px;
+  }
+}
