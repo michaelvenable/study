@@ -13,10 +13,6 @@ import './Answers.css';
  * onSelection(int) - Fired when the user makes a choice. The event contains the option that selected.
  */
 export class Answers extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     let buttons = [];
 

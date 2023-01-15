@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import { Deck } from './deck';
 import { DeckGallery } from './DeckGallery';
 import { Flashcard } from './Flashcard';

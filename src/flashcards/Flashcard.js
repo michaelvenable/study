@@ -20,7 +20,7 @@ export class Flashcard extends React.Component {
       <article className='flashcard' onClick={this.handleClick}>
       {
         this.props.content.startsWith('/')
-          ? <img src={this.props.content} alt='Oops! This image is missing!' />
+          ? <img src={this.props.content} alt='Flashcard' />
           : <p key={this.props.content}>{this.props.content}</p>
       }
       </article>
