@@ -49,7 +49,10 @@ export class Flashcard extends React.Component {
   handleClick(e) {
     e.preventDefault();
 
-    if (e.target.value === this.props.content.answer) {
+    // Double-equals (instead of tripple-equals) is intentional to allow casting of string values from the
+    // HTML to number values from decks.json.
+    // eslint-disable-next-line
+    if (e.target.value == this.props.content.answer) {
       if (this.props.onCorrect) {
         this.props.onCorrect();
       }
