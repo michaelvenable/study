@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './MultipleChoiceApp.css';
 
 import { Deck } from './deck';
@@ -52,11 +53,18 @@ export class MultipleChoiceApp extends React.Component {
   render() {
     return (
       <div className="multiple-choice-app">
-        <DeckGallery decks={this.state.decks} selectionChanged={this.changeDeckSelection} />
-        { this.state.current
-            ? <Flashcard key={this.state.current.question} content={this.state.current} onCorrect={this.advanceCard} />
-            : null
-        }
+        <DeckGallery className="deck-gallery" decks={this.state.decks} selectionChanged={this.changeDeckSelection} />
+
+        <div class="table">
+          { this.state.current
+              ? <Flashcard key={this.state.current.question} content={this.state.current} onCorrect={this.advanceCard} />
+              : null
+          }
+        </div>
+
+        <nav>
+          <Link className="back-button" to="/">Back</Link>
+        </nav>
       </div>
     );
   }

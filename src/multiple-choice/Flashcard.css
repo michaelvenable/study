@@ -1,5 +1,5 @@
 .multiple-choice-flashcard {
-  height: 100%;
+  height: calc(100% - 40px);
 
   background-color: #f0efeb;
   border: 4px solid #003049;
@@ -8,13 +8,16 @@
 
   box-sizing: border-box;
 
-  margin: 5px;
   padding: 5px;
 
   user-select: none;
 
   overflow: hidden;
   overflow-x: auto;
+
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
 
   display: flex;
   flex-direction: column;
