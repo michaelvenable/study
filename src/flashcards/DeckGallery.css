@@ -5,9 +5,6 @@
   /* "safe" centering is not yet supported in most browsers. Use auto margins instead (below). */
   /* justify-content: safe center; */
 
-  height: 120px;
-  min-height: 120px;
-
   column-gap: 20px;
 
   overflow-x: auto;

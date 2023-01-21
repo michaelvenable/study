@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Deck } from './deck';
 import { DeckGallery } from './DeckGallery';
 import { Flashcard } from './Flashcard';
@@ -52,11 +53,18 @@ export class FlashcardApp extends React.Component {
   render() {
     return (
       <div className="flashcard-app">
-        <DeckGallery decks={this.state.decks} selectionChanged={this.changeDeckSelection} />
-        { this.state.current
-            ? <Flashcard content={this.state.current} onClick={this.advanceCard} />
-            : null
-        }
+        <DeckGallery className="deck-gallery" decks={this.state.decks} selectionChanged={this.changeDeckSelection} />
+
+        <div className="table">
+          { this.state.current
+              ? <Flashcard content={this.state.current} onClick={this.advanceCard} />
+              : null
+          }
+        </div>
+
+        <nav>
+          <Link className="back-button" to="/">Back</Link>
+        </nav>
       </div>
     );
   }

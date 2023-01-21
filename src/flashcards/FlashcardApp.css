@@ -1,7 +1,10 @@
 .flashcard-app {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 100px 1fr minmax(20px, 50px);
   height: 100vh;
-  padding: 10px;
   box-sizing: border-box;
+}
+
+.deck-gallery {
+  padding: 10px;
 }
