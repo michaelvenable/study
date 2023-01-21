@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './MultipleChoiceApp.css';
+
+import { BackButton } from '../../controls/BackButton';
 import { Deck } from './deck';
 import { DeckGallery } from './DeckGallery';
 import { Flashcard } from './Flashcard';
 
-import './FlashcardApp.css';
-
 import decksss from './decks.json';
 
-export class FlashcardApp extends React.Component {
+export class MultipleChoiceApp extends React.Component {
   constructor(props) {
     super(props);
 
@@ -52,20 +52,19 @@ export class FlashcardApp extends React.Component {
 
   render() {
     return (
-      <div className="flashcard-app">
+      <div className="multiple-choice-app">
         <DeckGallery className="deck-gallery" decks={this.state.decks} selectionChanged={this.changeDeckSelection} />
 
-        <div className="table">
+        <div class="table">
           { this.state.current
-              ? <Flashcard content={this.state.current} onClick={this.advanceCard} />
+              ? <Flashcard key={this.state.current.question} content={this.state.current} onCorrect={this.advanceCard} />
               : null
           }
         </div>
 
-        <nav>
-          <Link className="back-button" to="/">Back</Link>
-        </nav>
+        <BackButton />
       </div>
     );
   }
 }
+

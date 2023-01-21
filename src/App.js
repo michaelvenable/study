@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home } from './home/Home';
-import { FlashcardApp } from './flashcards/FlashcardApp';
-import { MultipleChoiceApp } from './multiple-choice/MultipleChoiceApp';
-import { RekenrekApp } from './rekenrek/RekenrekApp';
+import { Home } from './apps/home/Home';
+import { FlashcardApp } from './apps/flashcards/FlashcardApp';
+import { MultipleChoiceApp } from './apps/multiple-choice/MultipleChoiceApp';
+import { RekenrekApp } from './apps/rekenrek/RekenrekApp';
 
 import './App.css';
 
