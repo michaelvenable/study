@@ -1,0 +1,7 @@
+.alphabetical-order-app {
+  display: grid;
+  grid-template-rows: 100px 1fr minmax(20px, 50px);
+  height: 100vh;
+  box-sizing: border-box;
+  gap: 10px;
+}

@@ -1,0 +1,58 @@
+.alphabetical-order-flashcard {
+  height: calc(100% - 40px);
+  padding: 5px;
+
+  overflow: hidden;
+  overflow-x: auto;
+
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.alphabetical-order-flashcard .words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+
+  padding-left: 0;
+}
+
+.alphabetical-order-flashcard .word {
+  color: #003049;
+  font-family: Quicksand;
+  font-size: calc(32px + .5vw);
+  font-weight: bold;
+
+  background-color: #f0efeb;
+  border-radius: 6px;
+
+  user-select: none;
+
+  white-space: nowrap;
+  text-align: center;
+
+  list-style-type: none;
+
+
+  transition: background-color 1.5s;
+}
+
+.alphabetical-order-flashcard.sorted .word {
+  background-color: #00ff00;
+}
+
+@media (min-width: 1000px) {
+  .alphabetical-order-flashcard {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-height: 800px) {
+  .alphabetical-order-flashcard {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

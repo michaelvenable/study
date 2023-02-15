@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home } from './apps/home/Home';
+import { AlphabeticalOrderApp } from './apps/alphabetical-order/AlphabeticalOrderApp';
 import { FlashcardApp } from './apps/flashcards/FlashcardApp';
+import { Home } from './apps/home/Home';
 import { MultipleChoiceApp } from './apps/multiple-choice/MultipleChoiceApp';
 import { RekenrekApp } from './apps/rekenrek/RekenrekApp';
 
@@ -11,6 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/alphabetical-order" element={<AlphabeticalOrderApp />} />
         <Route path="/flashcards" element={<FlashcardApp />} />
         <Route path="/multiple-choice" element={<MultipleChoiceApp />} />
         <Route path="/rekenrek" element={<RekenrekApp />} />
