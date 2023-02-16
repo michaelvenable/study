@@ -1,6 +1,5 @@
 .back-button {
   display: flex;
-  align-items: center;
   justify-content: center;
 
   background-color: #F0EFEB;
@@ -8,8 +7,7 @@
   color: black;
   font-size: 24px;
   font-weight: bold;
-  height: 100%;
-  padding: 2px 0;
+  padding: 8px 0;
   text-decoration: none;
   width: 100%;
 }
