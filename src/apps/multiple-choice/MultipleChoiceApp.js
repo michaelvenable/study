@@ -58,7 +58,6 @@ export class MultipleChoiceApp extends React.Component {
 
     let duration = 0;
     this.interval = setInterval(() => {
-      console.log('duration is ', duration);
       duration += 1;
       this.setState({
         duration: duration,
