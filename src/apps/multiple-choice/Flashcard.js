@@ -48,7 +48,8 @@ export class Flashcard extends React.Component {
     // Add the correct answer.
     reducedChoices.push(answer);
 
-    return reducedChoices.sort();
+    // Sort numerically.
+    return reducedChoices.sort((a, b) => a - b);
   }
 
   shuffle(array) {
