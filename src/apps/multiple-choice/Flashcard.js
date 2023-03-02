@@ -2,19 +2,42 @@ import React from 'react';
 
 import './Flashcard.css';
 
+/**
+ * Display a flashcard containing multiple-choice answers.
+ */
 export class Flashcard extends React.Component {
+  /**
+   * Initializes this.
+   *
+   * @param {string | number} content.answer        The correct answer.
+   * @param {number} content.take                   The number of multiple-choice answers to display.
+   * @param {string[] | number[]} content.choices   The possible choices.
+   * @param {number} duration                       The duration, measured in seconds, that the student has
+   *                                                been working on this deck of cards. If not provided, then
+   *                                                no duration counter will be shown.
+   */
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
 
     this.state = {
       status: '',
-      choices: this.getChoices()
+      choices: this.getChoices(),
+      duration: props.duration ? this.getDurationDisplay(props.duration) : undefined
     }
   }
 
   getChoices() {
     return this.shuffleChoices(this.props.content.choices, this.props.content.answer, this.props.content.take || this.props.content.choices.length);
+  }
+
+  getDurationDisplay(durationInSeconds) {
+    const minutes = Math.floor(durationInSeconds / 60);
+    const seconds = durationInSeconds % 60;
+
+    return seconds < 10
+      ? `${minutes}:0${seconds}`
+      : `${minutes}:${seconds}`;
   }
 
   shuffleChoices(allChoices, answer, count) {
@@ -25,8 +48,6 @@ export class Flashcard extends React.Component {
     // Add the correct answer.
     reducedChoices.push(answer);
 
-    // And reshuffled.
-    // return this.shuffle(reducedChoices);
     return reducedChoices.sort();
   }
 
@@ -49,7 +70,7 @@ export class Flashcard extends React.Component {
   handleClick(e) {
     e.preventDefault();
 
-    // Double-equals (instead of tripple-equals) is intentional to allow casting of string values from the
+    // Double-equals (instead of triple-equals) is intentional to allow casting of string values from the
     // HTML to number values from decks.json.
     // eslint-disable-next-line
     if (e.target.value == this.props.content.answer) {
@@ -66,8 +87,13 @@ export class Flashcard extends React.Component {
   }
 
   render() {
+    const durationDisplay = (this.props.duration !== undefined)
+                              ? this.getDurationDisplay(this.props.duration)
+                              : undefined
+
     return (
       <article className={'multiple-choice-flashcard ' + this.state.status}>
+        <span className="duration">{durationDisplay}</span>
         <p className="question">{this.props.content.question}</p>
         <div className="choices">
           {

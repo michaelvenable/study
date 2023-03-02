@@ -17,6 +17,7 @@ export class MultipleChoiceApp extends React.Component {
 
     this.state = {
       current: undefined,
+      duration: 0,
       decks: [],
     };
   }
@@ -46,8 +47,23 @@ export class MultipleChoiceApp extends React.Component {
     this.cards.shuffle();
 
     this.setState({
-      current: this.cards.draw()
+      current: this.cards.draw(),
+      duration: 0,
     });
+
+    if (this.interval) {
+      clearInterval(this.interval);
+      this.interval = undefined;
+    }
+
+    let duration = 0;
+    this.interval = setInterval(() => {
+      console.log('duration is ', duration);
+      duration += 1;
+      this.setState({
+        duration: duration,
+      });
+    }, 1000);
   }
 
   render() {
@@ -55,9 +71,9 @@ export class MultipleChoiceApp extends React.Component {
       <div className="multiple-choice-app">
         <DeckGallery className="deck-gallery" decks={this.state.decks} selectionChanged={this.changeDeckSelection} />
 
-        <div class="table">
+        <div className="table">
           { this.state.current
-              ? <Flashcard key={this.state.current.question} content={this.state.current} onCorrect={this.advanceCard} />
+              ? <Flashcard key={this.state.current.question} content={this.state.current} duration={this.state.duration} onCorrect={this.advanceCard} />
               : null
           }
         </div>

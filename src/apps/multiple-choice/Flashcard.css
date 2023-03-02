@@ -8,7 +8,7 @@
 
   box-sizing: border-box;
 
-  padding: 5px;
+  padding: 15px;
 
   user-select: none;
 
@@ -19,38 +19,46 @@
   margin-left: 5px;
   margin-right: 5px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: min-content .25fr 1fr;
+}
+
+.multiple-choice-flashcard .duration {
+  text-align: right;
 }
 
 .multiple-choice-flashcard .question {
+  margin: 0;
   color: #003049;
   font-family: Quicksand;
   font-size: calc(32px + .5vw);
   font-weight: bold;
   text-align: center;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
 }
 
 .multiple-choice-flashcard .choices {
   display: flex;
   flex-direction: column;
   white-space: nowrap;
-  width: 100%;
   overflow-x: auto;
-  text-align: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .multiple-choice-flashcard .choices button {
   color: #003049;
   font-family: Quicksand;
-  font-size: calc(24px + .5vw);
+  font-size: calc(22px + .5vw);
   font-weight: bold;
   text-align: center;
-  margin: 5px 30px;
   padding: 14px 60px;
   border-radius: 8px;
+  min-width: 60%;
 }
 
 .multiple-choice-flashcard.wrong {
