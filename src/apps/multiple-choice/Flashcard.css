@@ -31,8 +31,13 @@
   border: none;
   border-bottom: 2px solid #003049;
   border-right: 2px solid #003049;
+  cursor: pointer;
   font-size: 28px;
   padding: 10px 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
 }
 
 .repeat-button:active {

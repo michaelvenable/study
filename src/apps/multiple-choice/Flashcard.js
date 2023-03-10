@@ -2,6 +2,9 @@ import React from 'react';
 
 import './Flashcard.css';
 
+import redo1Icon from './redo-1.png';
+import redo3Icon from './redo-3.png';
+
 /**
  * Display a flashcard containing multiple-choice answers.
  */
@@ -113,8 +116,8 @@ export class Flashcard extends React.Component {
 
     return (
       <article className={'multiple-choice-flashcard ' + this.state.status}>
-        <button className="repeat-button repeat-1" onClick={this.handleRepeat1Click}>R1</button>
-        <button className="repeat-button repeat-3" onClick={this.handleRepeat3Click}>R3</button>
+        <button className="repeat-button repeat-1" onClick={this.handleRepeat1Click}><img src={redo1Icon} alt="Add card to deck"/></button>
+        <button className="repeat-button repeat-3" onClick={this.handleRepeat3Click}><img src={redo3Icon} alt="Add three copies of card to deck" /></button>
         <span className="duration">{durationDisplay}</span>
         <p className="question">{this.props.content.question}</p>
         <div className="choices">
