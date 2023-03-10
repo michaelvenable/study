@@ -14,6 +14,7 @@ export class MultipleChoiceApp extends React.Component {
 
     this.advanceCard = this.advanceCard.bind(this);
     this.changeDeckSelection = this.changeDeckSelection.bind(this);
+    this.repeatCard = this.repeatCard.bind(this);
 
     this.state = {
       current: undefined,
@@ -65,6 +66,16 @@ export class MultipleChoiceApp extends React.Component {
     }, 1000);
   }
 
+  repeatCard(count) {
+    console.log("Rpeeat", count);
+    for (let i = 0; i < count; i++) {
+      this.cards.addCard(this.state.current);
+    }
+
+    this.cards.shuffle();
+    console.log(this.cards);
+  }
+
   render() {
     return (
       <div className="multiple-choice-app">
@@ -72,7 +83,12 @@ export class MultipleChoiceApp extends React.Component {
 
         <div className="table">
           { this.state.current
-              ? <Flashcard key={this.state.current.question} content={this.state.current} duration={this.state.duration} onCorrect={this.advanceCard} />
+              ? <Flashcard
+                    key={this.state.current.question}
+                    content={this.state.current}
+                    duration={this.state.duration}
+                    onCorrect={this.advanceCard}
+                    onRepeat={this.repeatCard} />
               : null
           }
         </div>

@@ -15,10 +15,17 @@ export class Flashcard extends React.Component {
    * @param {number} duration                       The duration, measured in seconds, that the student has
    *                                                been working on this deck of cards. If not provided, then
    *                                                no duration counter will be shown.
+   * @param {function} onCorrect    Called when the user answers the question correctly.
+   * @param {function} [onRepeat]   Called when the user requested to repeat this question. The parameter will
+   *                                specify how many times to repeat. Copies of this card should be inserted
+   *                                into the remainder of the deck and shuffled. Optional.
    */
   constructor(props) {
     super(props);
+
     this.handleClick = this.handleClick.bind(this);
+    this.handleRepeat1Click = this.handleRepeat1Click.bind(this);
+    this.handleRepeat3Click = this.handleRepeat3Click.bind(this);
 
     this.state = {
       status: '',
@@ -87,6 +94,18 @@ export class Flashcard extends React.Component {
     }
   }
 
+  handleRepeat1Click(e) {
+    if (this.props.onRepeat) {
+      this.props.onRepeat(1);
+    }
+  }
+
+  handleRepeat3Click(e) {
+    if (this.props.onRepeat) {
+      this.props.onRepeat(3);
+    }
+  }
+
   render() {
     const durationDisplay = (this.props.duration !== undefined)
                               ? this.getDurationDisplay(this.props.duration)
@@ -94,6 +113,8 @@ export class Flashcard extends React.Component {
 
     return (
       <article className={'multiple-choice-flashcard ' + this.state.status}>
+        <button className="repeat-button repeat-1" onClick={this.handleRepeat1Click}>R1</button>
+        <button className="repeat-button repeat-3" onClick={this.handleRepeat3Click}>R3</button>
         <span className="duration">{durationDisplay}</span>
         <p className="question">{this.props.content.question}</p>
         <div className="choices">

@@ -8,8 +8,6 @@
 
   box-sizing: border-box;
 
-  padding: 15px;
-
   user-select: none;
 
   overflow: hidden;
@@ -20,14 +18,48 @@
   margin-right: 5px;
 
   display: grid;
+  grid-template:
+    "repeat-1 repeat-3 .        duration"
+    "question question question question"
+    "choices  choices  choices  choices";
+  grid-template-columns: min-content min-content 1fr min-content;
   grid-template-rows: min-content .25fr 1fr;
 }
 
+.repeat-button {
+  background-color: #f0efeb;
+  border: none;
+  border-bottom: 2px solid #003049;
+  border-right: 2px solid #003049;
+  font-size: 28px;
+  padding: 10px 20px;
+}
+
+.repeat-button:active {
+  background-color: #003049;
+  color: #f0efeb;
+}
+
+.repeat-button:focus {
+  outline: none;
+}
+
+.multiple-choice-flashcard .repeat-1 {
+  grid-area: repeat-1;
+}
+
+.multiple-choice-flashcard .repeat-3 {
+  grid-area: repeat-3;
+}
+
 .multiple-choice-flashcard .duration {
+  grid-area: duration;
+  padding: 15px;
   text-align: right;
 }
 
 .multiple-choice-flashcard .question {
+  grid-area: question;
   margin: 0;
   color: #003049;
   font-family: Quicksand;
@@ -42,6 +74,7 @@
 }
 
 .multiple-choice-flashcard .choices {
+  grid-area: choices;
   display: flex;
   flex-direction: column;
   white-space: nowrap;
