@@ -38,6 +38,11 @@
   -webkit-appearance: none;
   border-radius: 0;
   -webkit-border-radius: 0;
+  padding: 0 15px;
+}
+
+.repeat-button img {
+  max-width: 35px;
 }
 
 .repeat-button:active {
