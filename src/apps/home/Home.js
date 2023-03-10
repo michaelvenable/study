@@ -1,8 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 import './Home.css';
 
 export function Home() {
+  const path = localStorage.getItem('path');
+
+  if (path) {
+    localStorage.removeItem('path');
+    return <Navigate to={path} replace />;
+  }
+
   return (
     <div className="home">
       <h1>Eva's Learning Tools</h1>
