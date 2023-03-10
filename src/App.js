@@ -16,6 +16,7 @@ function App() {
           <Route path="/flashcards" element={<FlashcardApp />} />
           <Route path="/multiple-choice" element={<MultipleChoiceApp />} />
           <Route path="/rekenrek" element={<RekenrekApp />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </Router>
   );
