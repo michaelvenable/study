@@ -14,6 +14,7 @@ export class FlashcardApp extends React.Component {
 
     this.advanceCard = this.advanceCard.bind(this);
     this.changeDeckSelection = this.changeDeckSelection.bind(this);
+    this.repeatCard = this.repeatCard.bind(this);
 
     this.state = {
       current: undefined,
@@ -50,6 +51,14 @@ export class FlashcardApp extends React.Component {
     });
   }
 
+  repeatCard(count) {
+    for (let i = 0; i < count; i++) {
+      this.cards.addCard(this.state.current);
+    }
+
+    this.cards.shuffle();
+  }
+
   render() {
     return (
       <div className="flashcard-app">
@@ -57,7 +66,7 @@ export class FlashcardApp extends React.Component {
 
         <div className="table">
           { this.state.current
-              ? <Flashcard content={this.state.current} onClick={this.advanceCard} />
+              ? <Flashcard content={this.state.current} onClick={this.advanceCard} onRepeat={this.repeatCard} />
               : null
           }
         </div>

@@ -20,9 +20,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  display: grid;
+  grid-template:
+    "repeat-1 repeat-3 ."
+    "content  content  content";
+  grid-template-columns: min-content min-content 1fr;
+  grid-template-rows: min-content 1fr;
 }
 
-.flashcard img {
+.flashcard .repeat-button {
+  background-color: #f0efeb;
+  border: none;
+  border-bottom: 2px solid #003049;
+  border-right: 2px solid #003049;
+  cursor: pointer;
+  font-size: 28px;
+  padding: 10px 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  padding: 0 15px;
+}
+
+.flashcard .repeat-button img {
+  max-width: 35px;
+}
+
+.flashcard .repeat-button:active {
+  background-color: #003049;
+  color: #f0efeb;
+}
+
+.flashcard .repeat-button:focus {
+  outline: none;
+}
+
+.flashcard .content {
+  grid-area: content;
+}
+
+.flashcard img.content {
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -34,7 +73,7 @@
   box-sizing: border-box;
 }
 
-.flashcard p {
+.flashcard p.content {
   color: #003049;
   font-family: Quicksand;
   font-weight: bold;

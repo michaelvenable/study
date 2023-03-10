@@ -67,13 +67,11 @@ export class MultipleChoiceApp extends React.Component {
   }
 
   repeatCard(count) {
-    console.log("Rpeeat", count);
     for (let i = 0; i < count; i++) {
       this.cards.addCard(this.state.current);
     }
 
     this.cards.shuffle();
-    console.log(this.cards);
   }
 
   render() {

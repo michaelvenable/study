@@ -26,7 +26,7 @@
   grid-template-rows: min-content .25fr 1fr;
 }
 
-.repeat-button {
+.multiple-choice-flashcard .repeat-button {
   background-color: #f0efeb;
   border: none;
   border-bottom: 2px solid #003049;
@@ -41,16 +41,16 @@
   padding: 0 15px;
 }
 
-.repeat-button img {
+.multiple-choice-flashcard .repeat-button img {
   max-width: 35px;
 }
 
-.repeat-button:active {
+.multiple-choice-flashcard .repeat-button:active {
   background-color: #003049;
   color: #f0efeb;
 }
 
-.repeat-button:focus {
+.multiple-choice-flashcard .repeat-button:focus {
   outline: none;
 }
 
