@@ -121,6 +121,140 @@
       "answer": 0
     }
   ],
+  "Addition (plus 9)": [
+    {
+      "question": "0 + 9",
+      "choices": [9, 10, 11, 12, 13, 14],
+      "take": 5,
+      "answer": 9
+    },
+    {
+      "question": "1 + 9",
+      "choices": [9, 10, 11, 12, 13, 14],
+      "take": 5,
+      "answer": 10
+    },
+    {
+      "question": "2 + 9",
+      "choices": [10, 11, 12, 13, 14],
+      "take": 5,
+      "answer": 11
+    },
+    {
+      "question": "3 + 9",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18],
+      "take": 5,
+      "answer": 12
+    },
+    {
+      "question": "4 + 9",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 13
+    },
+    {
+      "question": "5 + 9",
+      "choices": [11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 14
+    },
+    {
+      "question": "6 + 9",
+      "choices": [12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 15
+    },
+    {
+      "question": "7 + 9",
+      "choices": [12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 16
+    },
+    {
+      "question": "8 + 9",
+      "choices": [12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 17
+    },
+    {
+      "question": "9 + 9",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 18
+    },
+    {
+      "question": "10 + 9",
+      "choices": [11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 19
+    },
+    {
+      "question": "9 + 0",
+      "choices": [9, 10, 11, 12, 13, 14],
+      "take": 5,
+      "answer": 9
+    },
+    {
+      "question": "9 + 1",
+      "choices": [9, 10, 11, 12, 13, 14],
+      "take": 5,
+      "answer": 10
+    },
+    {
+      "question": "9 + 2",
+      "choices": [11, 12, 13, 14, 15],
+      "take": 5,
+      "answer": 11
+    },
+    {
+      "question": "9 + 3",
+      "choices": [10, 11, 12, 13, 14, 15, 16],
+      "take": 5,
+      "answer": 12
+    },
+    {
+      "question": "9 + 4",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 13
+    },
+    {
+      "question": "9 + 5",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 14
+    },
+    {
+      "question": "9 + 6",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 15
+    },
+    {
+      "question": "9 + 7",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 16
+    },
+    {
+      "question": "9 + 8",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 17
+    },
+    {
+      "question": "9 + 9",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 18
+    },
+    {
+      "question": "9 + 10",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "take": 5,
+      "answer": 19
+    }
+  ],
   "Addition (plus 8)": [
     {
       "question": "0 + 8",
