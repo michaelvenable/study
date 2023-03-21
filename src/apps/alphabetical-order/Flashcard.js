@@ -35,11 +35,11 @@ export class Flashcard extends React.Component {
 
   handleDragEnd(fromIndex, toIndex) {
     var words = [...this.state.words];
-    
+
     const from = words[fromIndex];
     words.splice(fromIndex, 1);
     words.splice(toIndex, 0, from);
-    
+
     this.setState({
       isSorted: this.isSorted(words),
       words: words
@@ -47,10 +47,10 @@ export class Flashcard extends React.Component {
   }
 
   isSorted(words) {
-    const sorted = [...words].sort();
+    const sorted = [...words].map(w => w.toLowerCase()).sort();
 
     for (let i = 0; i < words.length; i++) {
-      if (words[i] !== sorted[i]) {
+      if (words[i].toLowerCase() !== sorted[i].toLowerCase()) {
         return false;
       }
     }
