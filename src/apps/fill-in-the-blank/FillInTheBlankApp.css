@@ -1,0 +1,10 @@
+.fill-in-the-blank-app {
+  display: grid;
+  grid-template-rows: 100px 1fr 75px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.fill-in-the-blank-app .deck-gallery {
+  padding: 10px;
+}

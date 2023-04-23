@@ -1,0 +1,42 @@
+.fill-in-the-blank-app .flashcard {
+  height: calc(100% - 80px);
+
+  background-color: #f0efeb;
+  border: 4px solid #003049;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  margin: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+
+  cursor: pointer;
+  user-select: none;
+
+  overflow: hidden;
+  overflow-x: auto;
+
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fill-in-the-blank-app .flashcard p.content {
+  color: #003049;
+  font-family: Quicksand;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 12vw;
+  line-height: 0;
+}
+
+@media (min-width: 1000px) {
+  .fill-in-the-blank-app .flashcard {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
