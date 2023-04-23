@@ -1,4 +1,60 @@
 {
+  "Subtraction (minus 2)": [
+    {
+      "question": "2 - 2",
+      "choices": [0, 1, 2, 3],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "3 - 2",
+      "choices": [1, 2, 3, 4, 5],
+      "take": 5,
+      "answer": 1
+    },
+    {
+      "question": "4 - 2",
+      "choices": [2, 3, 4, 5],
+      "take": 4,
+      "answer": 2
+    },
+    {
+      "question": "5 - 2",
+      "choices": [2, 3, 4, 5, 6],
+      "take": 5,
+      "answer": 3
+    },
+    {
+      "question": "6 - 2",
+      "choices": [2, 3, 4, 5, 6, 7],
+      "take": 5,
+      "answer": 4
+    },
+    {
+      "question": "7 - 2",
+      "choices": [3, 4, 5, 6, 7, 8],
+      "take": 5,
+      "answer": 5
+    },
+    {
+      "question": "8 - 2",
+      "choices": [3, 4, 5, 6, 7],
+      "take": 5,
+      "answer": 6
+    },
+    {
+      "question": "9 - 2",
+      "choices": [4, 5, 6, 7, 8, 9, 10],
+      "take": 5,
+      "answer": 7
+    },
+    {
+      "question": "10 - 2",
+      "choices": [5, 6, 7, 8, 9, 10, 11],
+      "take": 5,
+      "answer": 8
+    }
+  ],
   "Subtraction (minus 1)": [
     {
       "question": "1 - 1",
