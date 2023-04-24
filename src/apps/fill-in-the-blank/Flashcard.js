@@ -29,7 +29,7 @@ export class Flashcard extends React.Component {
     for (let i = 0; i < numLettersToRemove; i++) {
       const index = Math.floor(Math.random() * availableLetterIndexes.length);
       blankIndexes.push(availableLetterIndexes[index]);
-      availableLetterIndexes = availableLetterIndexes.filter(n => n != index);
+      availableLetterIndexes = availableLetterIndexes.filter(n => n !== index);
     }
 
     return (
