@@ -15,9 +15,8 @@ export class Flashcard extends React.Component {
     }
   }
 
-
   render() {
-    const percentageToRemove = 0.5;
+    const percentageToRemove = 0.35;
 
     const letters = this.props.content.split('');
 
