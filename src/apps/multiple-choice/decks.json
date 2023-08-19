@@ -1264,5 +1264,421 @@
       "take": 5,
       "answer": 12
     }
+  ],
+  "Multiplication": [
+    {
+      "question": "0 x 0",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 1",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 2",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 3",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 4",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 5",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 6",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 7",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 8",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 9",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 10",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 11",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "0 x 12",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "1 x 0",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "2 x 0",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "3 x 0",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "4 x 0",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "5 x 0",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "6 x 0",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "7 x 0",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "8 x 0",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "9 x 0",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "10 x 0",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "11 x 0",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "12 x 0",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "take": 4,
+      "answer": 0
+    },
+    {
+      "question": "1 x 1",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 1
+    },
+    {
+      "question": "1 x 2",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 2
+    },
+    {
+      "question": "1 x 3",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 3
+    },
+    {
+      "question": "1 x 4",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 4
+    },
+    {
+      "question": "1 x 5",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7],
+      "take": 4,
+      "answer": 5
+    },
+    {
+      "question": "1 x 6",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "take": 4,
+      "answer": 6
+    },
+    {
+      "question": "1 x 7",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 7
+    },
+    {
+      "question": "1 x 8",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "take": 4,
+      "answer": 8
+    },
+    {
+      "question": "1 x 9",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "take": 4,
+      "answer": 9
+    },
+    {
+      "question": "1 x 10",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "take": 4,
+      "answer": 10
+    },
+    {
+      "question": "1 x 11",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "take": 4,
+      "answer": 11
+    },
+    {
+      "question": "1 x 12",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "take": 4,
+      "answer": 12
+    },
+    {
+      "question": "2 x 1",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 2
+    },
+    {
+      "question": "3 x 1",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 3
+    },
+    {
+      "question": "4 x 1",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 4
+    },
+    {
+      "question": "5 x 1",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7],
+      "take": 4,
+      "answer": 5
+    },
+    {
+      "question": "6 x 1",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "take": 4,
+      "answer": 6
+    },
+    {
+      "question": "7 x 1",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "take": 4,
+      "answer": 7
+    },
+    {
+      "question": "8 x 1",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "take": 4,
+      "answer": 8
+    },
+    {
+      "question": "9 x 1",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "take": 4,
+      "answer": 9
+    },
+    {
+      "question": "10 x 1",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "take": 4,
+      "answer": 10
+    },
+    {
+      "question": "11 x 1",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "take": 4,
+      "answer": 11
+    },
+    {
+      "question": "12 x 1",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "take": 4,
+      "answer": 12
+    },
+    {
+      "question": "2 x 2",
+      "choices": [0, 1, 2, 3, 4, 5],
+      "take": 4,
+      "answer": 4
+    },
+    {
+      "question": "2 x 3",
+      "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "take": 4,
+      "answer": 6
+    },
+    {
+      "question": "2 x 4",
+      "choices": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "take": 4,
+      "answer": 8
+    },
+    {
+      "question": "2 x 5",
+      "choices": [5, 6, 7, 8, 9, 10, 11, 12],
+      "take": 4,
+      "answer": 10
+    },
+    {
+      "question": "2 x 6",
+      "choices": [7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "take": 4,
+      "answer": 12
+    },
+    {
+      "question": "2 x 7",
+      "choices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      "take": 4,
+      "answer": 14
+    },
+    {
+      "question": "2 x 8",
+      "choices": [15, 16, 17, 18, 19, 20],
+      "take": 4,
+      "answer": 16
+    },
+    {
+      "question": "2 x 9",
+      "choices": [15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "take": 4,
+      "answer": 18
+    },
+    {
+      "question": "2 x 10",
+      "choices": [20, 21, 22, 23, 24, 25],
+      "take": 4,
+      "answer": 20
+    },
+    {
+      "question": "2 x 11",
+      "choices": [20, 21, 22, 23, 24, 25],
+      "take": 4,
+      "answer": 22
+    },
+    {
+      "question": "2 x 12",
+      "choices": [20, 21, 22, 23, 24, 25],
+      "take": 4,
+      "answer": 24
+    },
+    {
+      "question": "3 x 2",
+      "choices": [2, 3, 4, 5, 6],
+      "take": 4,
+      "answer": 6
+    },
+    {
+      "question": "4 x 2",
+      "choices": [5, 6, 7, 8, 9, 10],
+      "take": 4,
+      "answer": 8
+    },
+    {
+      "question": "5 x 2",
+      "choices": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "take": 4,
+      "answer": 10
+    },
+    {
+      "question": "6 x 2",
+      "choices": [10, 11, 12, 13, 14, 15],
+      "take": 4,
+      "answer": 12
+    },
+    {
+      "question": "7 x 2",
+      "choices": [10, 11, 12, 13, 14, 15],
+      "take": 4,
+      "answer": 14
+    },
+    {
+      "question": "8 x 2",
+      "choices": [15, 16, 17, 18, 19, 20],
+      "take": 4,
+      "answer": 16
+    },
+    {
+      "question": "9 x 2",
+      "choices": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "take": 4,
+      "answer": 18
+    },
+    {
+      "question": "10 x 2",
+      "choices": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "take": 4,
+      "answer": 20
+    },
+    {
+      "question": "11 x 2",
+      "choices": [20, 21, 22, 23, 24, 25],
+      "take": 4,
+      "answer": 22
+    },
+    {
+      "question": "12 x 2",
+      "choices": [20, 21, 22, 23, 24, 25],
+      "take": 4,
+      "answer": 24
+    }
   ]
 }
